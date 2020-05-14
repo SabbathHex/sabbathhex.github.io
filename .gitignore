@@ -2,3 +2,4 @@ _site
 .jekyll-metadata
 package-lock.json
 Gemfile.lock
+docker-compose.yml
