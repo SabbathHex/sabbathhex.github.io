@@ -1,0 +1,19 @@
+# Config description https://jekyllrb.com/docs/configuration/
+plugins:
+    - jekyll-paginate
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: kramdown
+excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
+include:
+    - helloworld.md
+description: SH blog
+author:
+  github: SabbathHex
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
