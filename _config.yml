@@ -17,3 +17,5 @@ author:
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
+
+theme: jekyll-theme-minimal
