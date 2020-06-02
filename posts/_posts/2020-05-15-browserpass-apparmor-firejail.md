@@ -108,6 +108,7 @@ To propagate changes done in `.password-store/site-passwords` to `.websites-pass
 (user) ~/.password-store # echo > .git/hooks/post-commit <<EOF
 #!/bin/sh
 rsync -avh site-passwords/ ${HOME}/.websites-passwords --delete
+EOF
 ```
 
 The `-avh` with `--delete` will make `${HOME}/.websites-passwords/` an exact copy of `site-passwords/` subdirectory.
