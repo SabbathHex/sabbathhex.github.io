@@ -1,0 +1,28 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.hide-sm {
+		display: none;
+	}
+	.show-sm {
+		display: inherit;
+	}
+	body {
+		grid-template-columns: 100%;
+		grid-template-areas:
+		"header"
+		"content";
+	}
+	aside {
+		display: none;
+	}
+}
+
+/* Other devices */
+@media only screen and (min-width: 600px) {
+	.hide-sm {
+		display: inherit;
+	}
+	.show-sm {
+		display: none;
+	}
+}

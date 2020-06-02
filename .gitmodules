@@ -1,0 +1,3 @@
+[submodule "assets/css/new.css"]
+	path = assets/css/new.css
+	url = https://github.com/xz/new.css

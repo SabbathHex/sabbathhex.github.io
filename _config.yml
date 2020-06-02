@@ -3,10 +3,17 @@ permalink: :title
 highlighter: rouge
 description: SH blog
 author:
-  github: SabbathHex
+    github: SabbathHex
+title: "~sabbathhex/blog"
+plugins:
+    - "jekyll-github-metadata"
+collections:
+    posts:
+        link: "/"
+    pinned_pages:
+        link: "/pinned_pages"
+
 
 rss_path: feed.xml
-categories_path: categories.html
+excerpt_separator: "<!--more-->"
 tags_path: tags.html
-
-theme: jekyll-theme-minimal

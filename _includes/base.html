@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+		<!-- <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css"> -->
+		<link rel="stylesheet" href="{{ "/assets/css/new.css/new.css" }}">
+		<link rel="stylesheet" href="{{ "/assets/css/layout.css" }}">
+		<link rel="stylesheet" href="{{ "/assets/css/responsive.css" }}">
+		<link rel="stylesheet" href="{{ "/assets/css/toc.css" }}">
+		<link rel="stylesheet" href="{{ "/assets/css/rouge.css" }}">
+	</head>
+	<body>
+		<header>
+			{% assign category = page.categories | first %}
+			<h3 class="hide-sm"><a href="{{ "/" | absolute_url }}">{{ site.title }}</a>/{% if category %}{% assign category_object = site.collections | where: "label", category | first %}<a href="{{ category_object.link }}">{{ category_object.label }}</a>/{% endif %}<a href="{{ page.url }}">{{ page.title }}</a></h3>
+			<h3 class="show-sm"><a href="{{ page.url | default: '/' }}">{{ page.title | default: site.title }}</a></h3>
+			<nav class="show-sm">
+				<hr/>
+				<a href="/"><button>main page</button></a>
+				|
+				<a href="/pinned_pages"><button>other pages</button></a>
+			</nav>
+		</header>
+		<aside>
+			<h3>5 recent posts</h3>
+			<ul>
+				{% for post in site.posts limit:5 %}
+				<li>
+					<em>[{{ post.date | date: "%b %d, %Y"}}]</em>
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+			<h3>Links</h3>
+			<ul>
+				<li><a href="/about-blog">About this blog</a></li>
+			</ul>
+		</aside>
+		<main>

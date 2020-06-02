@@ -1,0 +1,4 @@
+#markdown-toc::before {
+    content: "TOC";
+    font-weight: bold;
+}

@@ -1,0 +1,24 @@
+body {
+	max-width: unset;
+	line-height: 1.7;
+	display: grid;
+	column-gap: 3vw;
+	row-gap: 1vw;
+	grid-template-columns: 20% auto;
+	grid-template-areas:
+	"header header"
+	"sidebar content";
+}
+header {
+	text-align: left;
+	grid-area: header;
+	width: 100%;
+}
+aside {
+	grid-area: sidebar;
+}
+main {
+	max-width: 1200px;
+	grid-area: content;
+	overflow: hidden;
+}
