@@ -1,6 +1,7 @@
 {% include base.html %}
 <article>
 	<h1 class="hide-sm">{{ page.title }}</h1>
+	<em>[{{ page.date | date: "%b %d, %Y"}}]</em>
 	{{ content }}
 </article>
 {% include footer.html %}
