@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Firefox Browserpass with firejail and AppArmor
+title: firefox browserpass with firejail and apparmor
 ---
 This is a guide describing how to set up Firefox with [firejail](https://github.com/netblue30/firejail/) + [AppArmor](https://en.wikipedia.org/wiki/AppArmor) with password management in [pass](https://www.passwordstore.org/). The passwords are filled in websites forms through [Browserpass addon](https://addons.mozilla.org/en-US/firefox/addon/Browserpass-ce/) + [Browserpass](https://github.com/Browserpass/Browserpass-native) native application.
 
