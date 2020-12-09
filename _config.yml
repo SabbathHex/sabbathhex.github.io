@@ -3,8 +3,8 @@ permalink: :title
 highlighter: rouge
 description: SH blog
 author:
-    github: SabbathHex
-title: "~sabbathhex/blog"
+    github: VTimofeenko
+title: "~VTimofeenko/blog"
 plugins:
     - "jekyll-github-metadata"
 collections:
