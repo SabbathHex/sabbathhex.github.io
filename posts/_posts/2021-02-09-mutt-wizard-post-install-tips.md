@@ -108,6 +108,12 @@ To set up virtual mailboxes
 
     The difference is opening the entry from sidebar as opposed to changing folder.
 
+1. To tag the email as "todo", add the following line in either of the configuration files:
+
+    ```
+    macro index tt "<modify-labels>!todo -unread -inbox<enter>" "Toggle todo"
+    ```
+
 
 As for emails that I need to save for later, I just save them (`s`) to "Saved" mailbox to be later fed into backup.
 
